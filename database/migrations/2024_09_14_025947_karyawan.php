@@ -41,7 +41,7 @@ return new class extends Migration
             $table->string('deptid')->nullable();
             $table->string('perjanjian')->nullable();
             $table->string('internal')->nullable();
-            $table->string('status')->nullable();
+            $table->boolean('status')->nullable();
             $table->timestamps();
         });
     }

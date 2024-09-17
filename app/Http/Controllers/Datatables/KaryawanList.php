@@ -18,7 +18,10 @@ class KaryawanList extends Controller
                     $btn = '';
                     return $btn;
                 })
-                ->rawColumns(['action'])
+                ->editColumn('select_orders', function ($row) {
+                    return '';
+                })
+                ->rawColumns(['action', 'select_orders'])
                 ->make(true);
         }
 
